@@ -1,14 +1,3 @@
-         
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-
-
-
-
 name: Build
 on:
   push:
@@ -42,8 +31,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          
-         
-         #SONAR_ORG: tkrapp
-          #SONAR_PROJECT_KEY: tkrapp_openssl
+        SONAR_ORG: 167179
+         SONAR_PROJECT_KEY: 167179_openssl
           
          
