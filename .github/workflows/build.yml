@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - openSSL_0_9_6-stable
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
